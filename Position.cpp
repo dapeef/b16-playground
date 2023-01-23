@@ -33,6 +33,9 @@ void Position::move(const double dx, const double dy, const double dtheta) {
     this->y += dy;
     this->theta += dtheta;
 }
+void Position::rotate(const double dtheta) {
+    this->move(0, 0, dtheta);
+}
 void Position::reset() {
     this->x = 0;
     this->y = 0;
