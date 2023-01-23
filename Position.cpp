@@ -3,40 +3,40 @@
 #include "Position.hpp"
 
 Position::Position(const double x, const double y, const double theta) {
-    setX(x);
-    setY(y);
-    setTheta(theta);
+    SetX(x);
+    SetY(y);
+    SetTheta(theta);
 }
 
-void Position::setX(const double x) {
+void Position::SetX(const double x) {
     this->x = x;
 }
-void Position::setY(const double y) {
+void Position::SetY(const double y) {
     this->y = y;
 }
-void Position::setTheta(const double theta) {
+void Position::SetTheta(const double theta) {
     this->theta = theta;
 }
 
-double Position::getX() const {
+double Position::GetX() const {
     return this->x;
 }
-double Position::getY() const {
+double Position::GetY() const {
     return this->y;
 }
-double Position::getTheta() const {
+double Position::GetTheta() const {
     return this->theta;
 }
 
-void Position::move(const double dx, const double dy, const double dtheta) {
+void Position::Move(const double dx, const double dy, const double dtheta) {
     this->x += dx;
     this->y += dy;
     this->theta += dtheta;
 }
-void Position::rotate(const double dtheta) {
-    this->move(0, 0, dtheta);
+void Position::Rotate(const double dtheta) {
+    this->Move(0, 0, dtheta);
 }
-void Position::reset() {
+void Position::Reset() {
     this->x = 0;
     this->y = 0;
     this->theta = 0;

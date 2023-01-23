@@ -15,15 +15,15 @@ int main() {
     Position p1(10, 10, 10);
 
     cout << "Move" << endl;
-    p1.move(59, 69, 79);
-    p1.move(10, 10);
+    p1.Move(59, 69, 79);
+    p1.Move(10, 10);
     cout << p1 << endl;
 
     cout << "Reset" << endl;
-    p1.reset();
+    p1.Reset();
     cout << p1 << endl;
 
     cout << "Rotate" << endl;
-    p1.rotate(100);
+    p1.Rotate(100);
     cout << p1 << endl;
 };
