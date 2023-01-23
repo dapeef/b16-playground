@@ -7,7 +7,7 @@ private:
     double theta;
 
 public:
-    Position(const double x = 0, const double y = 0, const double theta = 0);
+    Position(const double x=0, const double y=0, const double theta=0);
     
     void setX(const double x);
     void setY(const double y);
@@ -16,6 +16,8 @@ public:
     double getX() const;
     double getY() const;
     double getTheta() const;
+
+    void move(const double dx, const double dy, const double dtheta=0);
 
     std::string ToString() const;
 };

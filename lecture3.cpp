@@ -12,7 +12,9 @@ std::ostream& operator<<(std::ostream& os, const Position& p) {
 }
 
 int main() {
-    Position p1;
+    Position p1(10, 10, 10);
+
+    p1.move(59, 69, 79);
 
     cout << p1 << endl;
 };

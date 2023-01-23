@@ -28,6 +28,12 @@ double Position::getTheta() const {
     return this->theta;
 }
 
+void Position::move(const double dx, const double dy, const double dtheta) {
+    this->x += dx;
+    this->y += dy;
+    this->theta += dtheta;
+}
+
 std::string Position::ToString() const {
     std::stringstream ss;
 
