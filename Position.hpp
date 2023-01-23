@@ -19,9 +19,3 @@ public:
 
     std::string ToString() const;
 };
-
-// std::ostream& operator<<(std::ostream& os, const Position& p) {
-//     os << p.ToString();
-
-//     return os;
-// }

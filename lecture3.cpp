@@ -5,8 +5,14 @@
 
 using namespace std;
 
+std::ostream& operator<<(std::ostream& os, const Position& p) {
+    os << p.ToString();
+
+    return os;
+}
+
 int main() {
     Position p1;
 
-    cout << p1.ToString() << endl;
+    cout << p1 << endl;
 };

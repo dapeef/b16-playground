@@ -35,9 +35,3 @@ std::string Position::ToString() const {
 
     return ss.str();
 }
-
-// std::ostream& operator<<(std::ostream& os, const Position& p) {
-//     os << p.ToString();
-
-//     return os;
-// }
