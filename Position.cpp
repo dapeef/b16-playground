@@ -33,6 +33,11 @@ void Position::move(const double dx, const double dy, const double dtheta) {
     this->y += dy;
     this->theta += dtheta;
 }
+void Position::reset() {
+    this->x = 0;
+    this->y = 0;
+    this->theta = 0;
+}
 
 std::string Position::ToString() const {
     std::stringstream ss;

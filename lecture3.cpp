@@ -17,4 +17,8 @@ int main() {
     p1.move(59, 69, 79);
 
     cout << p1 << endl;
+
+    p1.reset();
+
+    cout << p1 << endl;
 };

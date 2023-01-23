@@ -18,6 +18,7 @@ public:
     double getTheta() const;
 
     void move(const double dx, const double dy, const double dtheta=0);
+    void reset();
 
     std::string ToString() const;
 };
